@@ -8,6 +8,11 @@
 
 function countZeros(n) {
     // Напишите код здесь
+     let str = '';
+     for (let i = 10; i <= n; i++) {
+       str+=i;
+     }
+     return str.split('0').length-1;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
