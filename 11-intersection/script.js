@@ -9,6 +9,11 @@
 
 function intersection(arr1, arr2) {
     // Напишите код здесь
+
+return [...new Set(arr1.filter(item => arr2.find(item2 => item2 === item) ))]
+// Вариант
+//return [...new Set(arr1.filter(item => arr2.includes(item) ))]
+
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
