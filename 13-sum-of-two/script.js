@@ -10,6 +10,18 @@
 
 function sumOfTwo(arr, sum) {
     // Напишите код здесь
+    let arrSum = [];
+    for (let i = 0; i  <=  arr.length - 1; i++) {
+           for (let k = i+1; k <= arr.length - 1; k++) {
+        if (arr[i] + arr[k] === sum)
+           {
+              arrSum.push(true)
+                   }
+         else 
+          arrSum.push(false);
+      }
+    }
+   return arrSum.includes(true)? true:false;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
