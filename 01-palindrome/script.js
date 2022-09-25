@@ -15,6 +15,8 @@
 
 function palindrome(str) {
     // Напишите код здесь
+    str = str.toLowerCase();
+    return str === str.split('').reverse().join('')
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
